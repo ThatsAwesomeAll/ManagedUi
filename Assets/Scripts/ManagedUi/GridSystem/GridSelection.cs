@@ -1,10 +1,12 @@
-﻿using ManagedUi.SystemInterfaces;
+﻿using ManagedUi.Selectables;
+using ManagedUi.SystemInterfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-namespace ManagedUi
+namespace ManagedUi.GridSystem
 {
 public class GridSelection : MonoBehaviour, ISelectableManager
 {
@@ -20,7 +22,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         Left,
         Right
     }
-    
+
     Vector2Int GetVector2IntFromDirection(Direction dir)
     {
         Vector2Int direction = Vector2Int.zero;
@@ -47,7 +49,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
     }
 
     private SelectableParent[] _selectables = Array.Empty<SelectableParent>();
-    private Dictionary<Vector2Int, SelectableParent> _grid = new Dictionary<Vector2Int, SelectableParent>();
+    private Dictionary<SelectableParent, Vector2Int> _grid = new Dictionary<SelectableParent, Vector2Int>();
 
     public void OnEnable()
     {
@@ -69,7 +71,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
             inputManager.OnRight += () =>
             {
                 MoveSelection(Direction.Right);
-            };    
+            };
             inputManager.OnConfirm += () =>
             {
                 Confirmed();
@@ -97,19 +99,25 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         }
         // Set most center element to be default
         Vector2Int currentMostCenter = new Vector2Int(0, 0);
-        if (_grid.ContainsKey(currentMostCenter))
+        var currentTarget = _grid.FirstOrDefault(x => x.Value == currentMostCenter);
+        if (currentTarget.Key != null)
         {
-            _grid[currentMostCenter].SetSelected(true);
+            currentTarget.Key.SetSelected(true);
             yield break;
         }
 
         float maxDistance = float.MaxValue;
+        KeyValuePair<SelectableParent, Vector2Int> target = _grid.FirstOrDefault(x => x.Value.magnitude > 0);
         foreach (var selectable in _grid)
         {
-            currentMostCenter = selectable.Key;
-            maxDistance = currentMostCenter.magnitude < maxDistance ? currentMostCenter.magnitude : maxDistance;
+            currentMostCenter = selectable.Value;
+            if (currentMostCenter.magnitude < maxDistance)
+            {
+                maxDistance = currentMostCenter.magnitude;
+                target = selectable;
+            }
         }
-        _grid[currentMostCenter].SetSelected(true);
+        target.Key.SetSelected(true);
     }
 
     void DeselectGrid()
@@ -126,7 +134,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         foreach (var selectable in _selectables)
         {
             selectable.GridPosition = new Vector2Int((int)(selectable.AnchoredPosition.x/minSize.x), (int)(selectable.AnchoredPosition.y/minSize.y));
-            _grid.Add(selectable.GridPosition, selectable);
+            _grid.Add(selectable, selectable.GridPosition);
         }
     }
 
@@ -143,14 +151,14 @@ public class GridSelection : MonoBehaviour, ISelectableManager
     }
 
 
-    public Vector2Int? GetMatchingElementDirection(Vector2Int current, Vector2Int direction)
+    public SelectableParent GetMatchingElementDirection(Vector2Int current, Vector2Int direction)
     {
-        Vector2Int? nextBest = null;
+        SelectableParent nextBest = null;
         int minDistance = int.MaxValue;
 
-        foreach (var element in _grid.Keys)
+        foreach (var element in _grid)
         {
-            Vector2Int diff = element - current;
+            Vector2Int diff = element.Value - current;
             float angle = Vector2.Angle(direction, diff);
             if (angle <= 45)
             {
@@ -158,7 +166,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
                 if (distance > 0 && distance < minDistance)
                 {
                     minDistance = distance;
-                    nextBest = element;
+                    nextBest = element.Key;
                 }
             }
         }
@@ -177,16 +185,16 @@ public class GridSelection : MonoBehaviour, ISelectableManager
     private void MoveSelection(Direction dir)
     {
         var selectionDirection = GetVector2IntFromDirection(dir);
-        Vector2Int? nextBest = GetMatchingElementDirection(_currentSelectedIndex, selectionDirection);
-        if (nextBest.HasValue)
+        SelectableParent nextBest = GetMatchingElementDirection(_currentSelectedIndex, selectionDirection);
+        if (nextBest != null)
         {
             DeselectGrid();
-            _currentSelected = _grid[nextBest.Value];
+            _currentSelected = nextBest;
             _currentSelected.SetSelected(true);
-            _currentSelectedIndex = nextBest.Value;
+            _currentSelectedIndex = _grid[nextBest];
         }
     }
-    
+
     public void TriggerExternalSelect(SelectableParent selectable)
     {
         if (selectable == _currentSelected)
@@ -202,7 +210,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
     {
         DeselectGrid();
         _currentSelected = null;
-        _currentSelectedIndex = new Vector2Int(0,0);
+        _currentSelectedIndex = new Vector2Int(0, 0);
     }
 
     public void TriggerExternalConfirm(SelectableParent selectable)

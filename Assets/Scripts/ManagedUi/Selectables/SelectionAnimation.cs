@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ManagedUi
+namespace ManagedUi.Selectables
 {
 
 [ExecuteInEditMode]

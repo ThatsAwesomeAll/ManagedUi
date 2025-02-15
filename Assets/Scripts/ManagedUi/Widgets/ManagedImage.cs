@@ -1,3 +1,4 @@
+using ManagedUi.GridSystem;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,18 +6,18 @@ using UnityEngine.UI;
 using UnityEditor;
 #endif
 
-namespace UI.ManagedUi
+namespace ManagedUi.Widgets
 {
     
     [ExecuteInEditMode]
-    public class ManagedImage : Image
+    public class ManagedImage : Image, IGridElement
     {
         [Header("Style")] public bool onHoverEffect = true;
         public bool fixColor = false;
         public UiSettings.ColorName colorTheme;
         public Color imageColor;
-
-
+        public Vector2Int growth = Vector2Int.one;
+        
         [SerializeField] private UiSettings _manager;
 
         protected override void Awake()
@@ -58,6 +59,8 @@ namespace UI.ManagedUi
         {
             color = colorTypeColorValue;
         }
+        public int VerticalLayoutGrowth() => growth.x;
+        public int HorizontalLayoutGrowth() => growth.y;
     }
 
 #if UNITY_EDITOR
@@ -72,21 +75,6 @@ namespace UI.ManagedUi
             image.SetUp();
         }
 
-        void DrawProperty(SerializedProperty property, string content, string tooltip)
-        {
-            GUILayout.BeginHorizontal(EditorStyles.helpBox);
-
-            EditorGUILayout.LabelField(new GUIContent(content, tooltip), GUILayout.Width(120));
-            EditorGUILayout.PropertyField(property, new GUIContent("", tooltip));
-
-            GUILayout.EndHorizontal();
-        }
-
-        void DrawCustomHeader()
-        {
-            GUILayout.Space(2);
-            EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
-        }
 
         public override void OnInspectorGUI()
         {
@@ -94,24 +82,26 @@ namespace UI.ManagedUi
             var colorType = serializedObject.FindProperty("imageColor");
             var fixColor = serializedObject.FindProperty("fixColor");
             var colorTheme = serializedObject.FindProperty("colorTheme");
+            var growth = serializedObject.FindProperty("growth");
 
-            DrawProperty(fixColor, "Color fixed", "Fix your color by Theme");
+            EditorUtils.DrawProperty(fixColor, "Color fixed", "Fix your color by Theme");
             if (fixColor.boolValue)
             {
-                DrawProperty(colorTheme, "Color", "Select Color");
+                EditorUtils.DrawProperty(colorTheme, "Color", "Select Color");
                 int enumIndex = colorTheme.enumValueIndex;
                 UiSettings.ColorName currentEnumValue = (UiSettings.ColorName)enumIndex;
                 image.SetColorByTheme(currentEnumValue);
             }
             else
             {
-                DrawProperty(colorType, "Color", "Select Color");
+                EditorUtils.DrawProperty(colorType, "Color", "Select Color");
                 image.SetColorByFixed(colorType.colorValue);
             }
+            EditorUtils.DrawProperty(growth, "Layout Growth", "Selecte Grow factor for layout group");
 
             if (UIManagerAsset != null)
             {
-                DrawProperty(UIManagerAsset, "Manager Asset", "Dont change this");
+                EditorUtils.DrawProperty(UIManagerAsset, "Manager Asset", "Dont change this");
             }
             else
             {
@@ -119,7 +109,7 @@ namespace UI.ManagedUi
             }
 
             serializedObject.ApplyModifiedProperties();
-            DrawCustomHeader();
+            EditorUtils.DrawCustomHeader();
             base.OnInspectorGUI();
         }
     }

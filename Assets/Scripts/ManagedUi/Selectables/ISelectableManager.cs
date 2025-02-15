@@ -1,4 +1,4 @@
-﻿namespace ManagedUi
+﻿namespace ManagedUi.Selectables
 {
     public interface ISelectableManager
     {

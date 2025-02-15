@@ -1,10 +1,9 @@
 using PrimeTween;
-using UI.ManagedUi;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 
-namespace ManagedUi
+namespace ManagedUi.Selectables
 {
 [RequireComponent(typeof(RectTransform))]
 [ExecuteInEditMode]
