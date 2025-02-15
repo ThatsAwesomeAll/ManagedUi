@@ -10,33 +10,42 @@ namespace ManagedUi
 public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler, IPointerClickHandler,
     IPointerEnterHandler, IPointerExitHandler
 {
-    ISelectableManager _selectableManager;
-    RectTransform _rectTransform;
-    Color _animationImageDefaultColor = Color.clear;
-
-    private bool _selected;
-    Vector2Int _internalGridPosition = new Vector2Int(0, 0);
-    bool _gridFixed = false;
-
-    Tween _currentScaleTween;
-    Tween _currentColorTween;
-
+    [Header("Animation")]
     public SelectionImage _animationImage;
+
     public float animationDuration = 0.1f;
     public float animationStrengthPercent = 2f;
     public Ease animationEase = Ease.Default;
+
+    [Header("Grid Settings")]
+    public bool _gridFixed = false;
+
+    [SerializeField] private UiSettings _manager;
+
+
+    ISelectableManager _selectableManager;
+    RectTransform _rectTransform;
+    Vector2Int _internalGridPosition = new Vector2Int(0, 0);
     private bool _confirmed;
+    private bool _selected;
+    Tween _currentScaleTween;
 
 
     public Vector2 anchoredPosition => _rectTransform.anchoredPosition;
     public Vector2 size => new Vector2(_rectTransform.rect.width, _rectTransform.rect.height);
 
+    void SetUpSettings()
+    {
+        if (!_manager) _manager = UiSettings.GetSettings();
+    }
+
     private void Awake()
     {
         _rectTransform ??= GetComponent<RectTransform>();
+        SetUpSettings();
     }
 
-    public Vector2Int gridPosition
+    public Vector2Int GridPosition
     {
         get => _internalGridPosition;
         set
@@ -65,21 +74,17 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
             AnimateConfirm();
         }
     }
-    
+
     private void OnEnable()
     {
         _selectableManager ??= GetComponentInParent<ISelectableManager>();
         _animationImage ??= GetComponentInChildren<SelectionImage>();
-        if (_animationImage)
-        {
-            _animationImageDefaultColor = _animationImage.color;
-        }
+        SetUpSettings();
     }
 
-    private void AnimateVisual(float endValuePercent, Color endColor, float inDuration)
+    private void AnimateVisual(float endValuePercent, Color startColor, Color endColor, float inDuration, bool withFadeout = false)
     {
         _currentScaleTween.Stop();
-        Color startColor = _animationImageDefaultColor;
         float scalingValue = 1 + endValuePercent*0.01f;
         Vector3 startSize = transform.localScale;
         Vector3 endSize = Vector3.one*scalingValue;
@@ -87,40 +92,74 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
         {
             return;
         }
-        _currentScaleTween = PrimeTween.Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
+        _currentScaleTween = Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
         {
             if (_animationImage != null)
             {
-                _animationImage.color = Color.Lerp(startColor, endColor, currentValue*0.2f);
+                _animationImage.SetColor(Color.Lerp(startColor, endColor, currentValue));
             }
             transform.localScale = Vector3.Lerp(startSize, endSize, currentValue);
-        });
+        }, ease: animationEase);
+        if (withFadeout)
+        {
+            _currentScaleTween.OnComplete(() =>
+            {
+                if (_animationImage != null)
+                {
+                    _animationImage.SetColor(startColor);
+                }
+                transform.localScale = startSize;
+            });
+        }
+    }
+    
+    private void AnimateVisual(float endValuePercent, float inDuration)
+    {
+        _currentScaleTween.Stop();
+        float scalingValue = 1 + endValuePercent*0.01f;
+        Vector3 startSize = transform.localScale;
+        Vector3 endSize = Vector3.one*scalingValue;
+        if (startSize == endSize)
+        {
+            return;
+        }
+        _currentScaleTween = Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
+        {
+            transform.localScale = Vector3.Lerp(startSize, endSize, currentValue);
+            if (_animationImage != null)
+            {
+                _animationImage.LerpToDefault(currentValue);
+            }
+        }, ease: animationEase);
+    }
+
+    private void EnableVisualImage(bool enable)
+    {
+        if (!_animationImage) return;
+        if (_animationImage.enableNeeded)
+        {
+            _animationImage.gameObject.SetActive(enable);
+        }
     }
 
     private void AnimateSelect(bool selected)
     {
-        Color selectColor;
-        float animationSize = 0;
         if (selected)
         {
-            selectColor = Color.green;
-            animationSize = animationStrengthPercent;
+            AnimateVisual(animationStrengthPercent, _manager.selectedColor, _manager.selectedColor, animationDuration);
         }
         else
         {
-            selectColor = Color.blue;
+            AnimateVisual(0, animationDuration);
         }
-        AnimateVisual(animationSize, selectColor, animationDuration);
+        EnableVisualImage(selected);
     }
-    
+
     private void AnimateConfirm()
     {
-        AnimateVisual(animationStrengthPercent * 1.5f, Color.red, animationDuration * 0.5f);
+        AnimateVisual(animationStrengthPercent*1.2f, _manager.selectedColor, _manager.confirmedColor, animationDuration*0.5f, true);
     }
-    
-    
-    
-    
+
     public void OnPointerClick(PointerEventData eventData)
     {
         _selectableManager.TriggerExternalConfirm(this);
@@ -139,7 +178,7 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
     {
         _selectableManager.TriggerExternalDeSelect(this);
     }
-    
+
     public void OnPointerExit(PointerEventData eventData)
     {
         // OnDeselect(eventData);

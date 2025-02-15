@@ -48,8 +48,8 @@ namespace UI.ManagedUi
 
             public ColorTheme(ColorMode mode)
             {
-                this.ColorAccent = new Color(1.0f,0.71f,0.01f );
-                ColorAccentLighter = new Color(1.0f,0.91f,0.01f );;
+                ColorAccent = new Color(1.0f,0.71f,0.01f );
+                ColorAccentLighter = new Color(1.0f,0.91f,0.01f );
                 ColorMain = new Color(0.98f,0.51f,0.0f );
                 ColorLight = new Color(0.15f,0.32f,0.48f );
                 ColorLighter = new Color(0.2f,0.4f,0.6f );
@@ -59,6 +59,9 @@ namespace UI.ManagedUi
                 ColorBackgroundDarker = new Color(0.1f,0.1f,0.1f );
             }
         }
+
+        public Color selectedColor = new Color(1.0f,0.71f,0.01f );
+        public Color confirmedColor = new Color(1.0f,0.91f,0.01f );
 
         public ColorTheme ImageColors = new ColorTheme(ColorMode.Default);
         public ColorTheme TextColors = new ColorTheme(ColorMode.Default);

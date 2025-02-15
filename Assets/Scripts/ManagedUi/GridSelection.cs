@@ -92,7 +92,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         if (_currentSelected != null)
         {
             _currentSelected.SetSelected(true);
-            _currentSelectedIndex = _currentSelected.gridPosition;
+            _currentSelectedIndex = _currentSelected.GridPosition;
         }
         // Set most center element to be default
         Vector2Int currentMostCenter = new Vector2Int(0, 0);
@@ -124,8 +124,8 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         Vector2 minSize = GetMinimalSize(_selectables);
         foreach (var selectable in _selectables)
         {
-            selectable.gridPosition = new Vector2Int((int)(selectable.anchoredPosition.x/minSize.x), (int)(selectable.anchoredPosition.y/minSize.y));
-            _grid.Add(selectable.gridPosition, selectable);
+            selectable.GridPosition = new Vector2Int((int)(selectable.anchoredPosition.x/minSize.x), (int)(selectable.anchoredPosition.y/minSize.y));
+            _grid.Add(selectable.GridPosition, selectable);
         }
     }
 
@@ -175,7 +175,6 @@ public class GridSelection : MonoBehaviour, ISelectableManager
 
     private void MoveSelection(Direction dir)
     {
-        Debug.Log("Move Selection called with " + dir);
         var selectionDirection = GetVector2IntFromDirection(dir);
         Vector2Int? nextBest = GetMatchingElementDirection(_currentSelectedIndex, selectionDirection);
         if (nextBest.HasValue)
@@ -195,7 +194,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         }
         DeselectGrid();
         _currentSelected = selectable;
-        _currentSelectedIndex = selectable.gridPosition;
+        _currentSelectedIndex = selectable.GridPosition;
         _currentSelected.SetSelected(true);
     }
     public void TriggerExternalDeSelect(SelectableParent selectable)
@@ -214,7 +213,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         DeselectGrid();
         _currentSelected = selectable;
         _currentSelected.SetConfirmed();
-        _currentSelectedIndex = selectable.gridPosition;
+        _currentSelectedIndex = selectable.GridPosition;
     }
 }
 }
