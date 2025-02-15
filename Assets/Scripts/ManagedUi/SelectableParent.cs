@@ -1,8 +1,9 @@
 using PrimeTween;
+using UI.ManagedUi;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace UI.ManagedUi
+namespace ManagedUi
 {
 [RequireComponent(typeof(RectTransform))]
 [ExecuteInEditMode]
@@ -24,10 +25,16 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
     public float animationDuration = 0.1f;
     public float animationStrengthPercent = 2f;
     public Ease animationEase = Ease.Default;
+    private bool _confirmed;
 
 
     public Vector2 anchoredPosition => _rectTransform.anchoredPosition;
     public Vector2 size => new Vector2(_rectTransform.rect.width, _rectTransform.rect.height);
+
+    private void Awake()
+    {
+        _rectTransform ??= GetComponent<RectTransform>();
+    }
 
     public Vector2Int gridPosition
     {
@@ -38,40 +45,35 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
         }
     }
 
-    public bool selected
+    public bool Selected => _selected;
+    public void SetSelected(bool selected)
     {
-        get => _selected;
-        set
+        if (selected == _selected)
         {
-            _selected = value;
-            if (selected)
-            {
-                OnSelect(null);
-            }
-            else
-            {
-                OnDeselect(null);
-            }
+            return;
         }
+        _selected = selected;
+        AnimateSelect(_selected);
     }
 
-    private void Start()
+    public bool Confirmed => _confirmed;
+    public void SetConfirmed()
+    {
+        _confirmed = true;
+        if (_confirmed)
+        {
+            AnimateConfirm();
+        }
+    }
+    
+    private void OnEnable()
     {
         _selectableManager ??= GetComponentInParent<ISelectableManager>();
-        _rectTransform ??= GetComponent<RectTransform>();
         _animationImage ??= GetComponentInChildren<SelectionImage>();
         if (_animationImage)
         {
             _animationImageDefaultColor = _animationImage.color;
         }
-    }
-
-    public void OnSelect(BaseEventData eventData)
-    {
-    }
-
-    public void OnDeselect(BaseEventData eventData)
-    {
     }
 
     private void AnimateVisual(float endValuePercent, Color endColor, float inDuration)
@@ -85,7 +87,6 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
         {
             return;
         }
-
         _currentScaleTween = PrimeTween.Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
         {
             if (_animationImage != null)
@@ -96,23 +97,52 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
         });
     }
 
+    private void AnimateSelect(bool selected)
+    {
+        Color selectColor;
+        float animationSize = 0;
+        if (selected)
+        {
+            selectColor = Color.green;
+            animationSize = animationStrengthPercent;
+        }
+        else
+        {
+            selectColor = Color.blue;
+        }
+        AnimateVisual(animationSize, selectColor, animationDuration);
+    }
+    
+    private void AnimateConfirm()
+    {
+        AnimateVisual(animationStrengthPercent * 1.5f, Color.red, animationDuration * 0.5f);
+    }
+    
+    
+    
+    
     public void OnPointerClick(PointerEventData eventData)
     {
-        // AnimateVisual(animationStrength,animationDuration);
+        _selectableManager.TriggerExternalConfirm(this);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Color selectColor = Color.white;
-        selectColor.a = 0.2f;
-        AnimateVisual(animationStrengthPercent, selectColor, animationDuration);
+        OnSelect(eventData);
+    }
+    public void OnSelect(BaseEventData eventData)
+    {
+        _selectableManager.TriggerExternalSelect(this);
     }
 
+    public void OnDeselect(BaseEventData eventData)
+    {
+        _selectableManager.TriggerExternalDeSelect(this);
+    }
+    
     public void OnPointerExit(PointerEventData eventData)
     {
-        Color selectColor = Color.black;
-        selectColor.a = 0.2f;
-        AnimateVisual(0f, selectColor, animationDuration);
+        // OnDeselect(eventData);
     }
 }
 
