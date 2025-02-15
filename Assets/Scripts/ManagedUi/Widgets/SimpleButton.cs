@@ -1,5 +1,4 @@
 using TMPro;
-using UI.ManagedUi;
 using UnityEngine;
 
 #if UNITY_EDITOR

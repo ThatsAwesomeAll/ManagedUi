@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace UI.ManagedUi
+namespace ManagedUi
 {
 
 [CreateAssetMenu(fileName = "UiManager", menuName = "UiManager/UiSettings")]
