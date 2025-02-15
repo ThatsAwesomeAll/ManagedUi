@@ -1,4 +1,3 @@
-using PrimeTween;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +16,6 @@ namespace UI.ManagedUi
         public UiSettings.ColorName colorTheme;
         public Color imageColor;
 
-        // private Tween _hoverTween;
 
         [SerializeField] private UiSettings _manager;
 
@@ -48,18 +46,6 @@ namespace UI.ManagedUi
             }
         }
         #endif
-
-        private void OnMouseEnter()
-        {
-            // _hoverTween.Stop();
-            // _hoverTween = Tween.Scale(this.transform, 1.2f, 0.3f, Ease.InBounce);
-        }
-
-        private void OnMouseExit()
-        {
-            // _hoverTween.Stop();
-            // _hoverTween = Tween.Scale(this.transform, 1.0f, 0.2f, Ease.InBounce);
-        }
 
         public void SetColorByTheme(UiSettings.ColorName currentEnumValue)
         {

@@ -17,13 +17,13 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
     Vector2Int _internalGridPosition = new Vector2Int(0, 0);
     bool _gridFixed = false;
 
-    // Tween _currentScaleTween;
-    // Tween _currentColorTween;
+    Tween _currentScaleTween;
+    Tween _currentColorTween;
 
     public SelectionImage _animationImage;
     public float animationDuration = 0.1f;
     public float animationStrengthPercent = 2f;
-    // public Ease animationEase = Ease.Default;
+    public Ease animationEase = Ease.Default;
 
 
     public Vector2 anchoredPosition => _rectTransform.anchoredPosition;
@@ -76,7 +76,7 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
 
     private void AnimateVisual(float endValuePercent, Color endColor, float inDuration)
     {
-        // _currentScaleTween.Stop();
+        _currentScaleTween.Stop();
         Color startColor = _animationImageDefaultColor;
         float scalingValue = 1 + endValuePercent*0.01f;
         Vector3 startSize = transform.localScale;
@@ -86,14 +86,14 @@ public class SelectableParent : MonoBehaviour, ISelectHandler, IDeselectHandler,
             return;
         }
 
-        // _currentScaleTween = PrimeTween.Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
-        // {
-        //     if (_animationImage != null)
-        //     {
-        //         _animationImage.color = Color.Lerp(startColor, endColor, currentValue*0.2f);
-        //     }
-        //     transform.localScale = Vector3.Lerp(startSize, endSize, currentValue);
-        // });
+        _currentScaleTween = PrimeTween.Tween.Custom(0.0f, 1.0f, inDuration, (float currentValue) =>
+        {
+            if (_animationImage != null)
+            {
+                _animationImage.color = Color.Lerp(startColor, endColor, currentValue*0.2f);
+            }
+            transform.localScale = Vector3.Lerp(startSize, endSize, currentValue);
+        });
     }
 
     public void OnPointerClick(PointerEventData eventData)
