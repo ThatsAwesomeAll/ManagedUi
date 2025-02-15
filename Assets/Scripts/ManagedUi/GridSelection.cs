@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ManagedUi.SystemInterfaces;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -124,7 +125,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         Vector2 minSize = GetMinimalSize(_selectables);
         foreach (var selectable in _selectables)
         {
-            selectable.GridPosition = new Vector2Int((int)(selectable.anchoredPosition.x/minSize.x), (int)(selectable.anchoredPosition.y/minSize.y));
+            selectable.GridPosition = new Vector2Int((int)(selectable.AnchoredPosition.x/minSize.x), (int)(selectable.AnchoredPosition.y/minSize.y));
             _grid.Add(selectable.GridPosition, selectable);
         }
     }
@@ -135,7 +136,7 @@ public class GridSelection : MonoBehaviour, ISelectableManager
         // compute the minimal size of all selectables
         foreach (SelectableParent selectable in selectables)
         {
-            var currentSize = selectable.size;
+            var currentSize = selectable.Size;
             minSize = minSize.magnitude > currentSize.magnitude ? currentSize : minSize;
         }
         return minSize;

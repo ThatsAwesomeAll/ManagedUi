@@ -1,9 +1,8 @@
 ﻿using System;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace ManagedUi
+namespace ManagedUi.SystemInterfaces
 {
 public class UiInputManager : MonoBehaviour
 {

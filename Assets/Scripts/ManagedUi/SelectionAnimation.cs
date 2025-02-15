@@ -5,8 +5,9 @@ using UnityEngine.UI;
 namespace ManagedUi
 {
 
+[ExecuteInEditMode]
 [RequireComponent(typeof(Image))]
-public class SelectionImage : MonoBehaviour
+public class SelectionAnimation : MonoBehaviour
 {
     public List<Image> images = new List<Image>();
     public bool enableNeeded = true;
@@ -23,15 +24,22 @@ public class SelectionImage : MonoBehaviour
     private void OnEnable()
     {
         _selectionMarker ??= GetComponent<Image>();
+        SetUpSelectionMarker();
         if (images.Contains(_selectionMarker))
         {
             Debug.LogError("Selection Marker in Image List. Prohibited");
             images.Remove(_selectionMarker);
         }
+        defaultColors.Clear();
         foreach (var image in images)
         {
             defaultColors.Add(image, image.color);
         }
+    }
+    private void SetUpSelectionMarker()
+    {
+        _selectionMarker.rectTransform.anchorMax = Vector2.one;
+        _selectionMarker.rectTransform.anchorMin = Vector2.zero;
     }
     public void LerpToDefault(float currentValue)
     {

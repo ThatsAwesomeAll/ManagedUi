@@ -50,7 +50,7 @@ namespace UI.ManagedUi
         public void SetColorByTheme(UiSettings.ColorName currentEnumValue)
         {
             if (!_manager) return;
-            var colorTemp = _manager.GetColorByEnum(currentEnumValue);
+            var colorTemp = _manager.GetImageColorByEnum(currentEnumValue);
             color = colorTemp;
         }
 
