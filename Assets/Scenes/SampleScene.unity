@@ -323,8 +323,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 172972396}
   _background: {fileID: 104668192}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 403332128}
   _text: {fileID: 1699502286}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -694,8 +728,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1360185209}
   _background: {fileID: 487303390}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1431783992}
   _text: {fileID: 996437162}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -2160,8 +2228,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 103141327}
   _background: {fileID: 761032564}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 55534658}
   _text: {fileID: 1661651442}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -3044,8 +3146,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1397413041}
+  m_Children: []
   m_Father: {fileID: 1800857722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4591,8 +4692,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 2003982890}
   _background: {fileID: 210968343}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1223087811}
   _text: {fileID: 15189704}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -5335,8 +5470,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1846116182}
   _background: {fileID: 932030077}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1030478033}
   _text: {fileID: 697565537}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -5408,8 +5577,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 62684371}
   _background: {fileID: 782932161}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 636204253}
   _text: {fileID: 775433069}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -6202,8 +6405,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 2083313636}
   _background: {fileID: 1303557556}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1838686696}
   _text: {fileID: 764752322}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -6356,8 +6593,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 2110235756}
   _background: {fileID: 1454834937}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 111365546}
   _text: {fileID: 1221237822}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -7107,8 +7378,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 806068854}
   _background: {fileID: 1913084372}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 2013837127}
   _text: {fileID: 376867266}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -7399,16 +7704,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 48710902}
   _background: {fileID: 1475164736}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 668492998}
   _text: {fileID: 2132754866}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
---- !u!224 &1397413041 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-  m_PrefabInstance: {fileID: 4694433902479006082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431783990
 GameObject:
   m_ObjectHideFlags: 0
@@ -8322,8 +8656,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1244505461}
   _background: {fileID: 829344253}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 585508278}
   _text: {fileID: 2021845667}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -8622,8 +8990,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1825484458}
   _background: {fileID: 1453679578}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1639944796}
   _text: {fileID: 1315906670}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -9242,8 +9644,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1642622946}
   _background: {fileID: 2067437757}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 1528546067}
   _text: {fileID: 1497982884}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -9315,8 +9751,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef0068a1eb442e2b6d749f0b7a7a91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title: 
+  Text: 
+  Image: {fileID: 0}
+  BackgroundColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TitleColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
+  TextColor:
+    ColorAccent: {r: 0, g: 0, b: 0, a: 0}
+    ColorAccentLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorMain: {r: 0, g: 0, b: 0, a: 0}
+    ColorLight: {r: 0, g: 0, b: 0, a: 0}
+    ColorLighter: {r: 0, g: 0, b: 0, a: 0}
+    ColorDark: {r: 0, g: 0, b: 0, a: 0}
+    ColorDarker: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackground: {r: 0, g: 0, b: 0, a: 0}
+    ColorBackgroundDarker: {r: 0, g: 0, b: 0, a: 0}
   _image: {fileID: 1143141698}
   _background: {fileID: 2096089079}
+  _selectionAnimation: {fileID: 0}
   _title: {fileID: 768192576}
   _text: {fileID: 1789894019}
   _manager: {fileID: 11400000, guid: 63436eb8e6f838d4d8ee618293c1bb81, type: 2}
@@ -10960,31 +11430,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2109975765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5115806476648062905, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-  m_PrefabInstance: {fileID: 4694433902479006082}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2109975770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109975765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcc82264b53141fd9a4431a9b137d6ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 30
-    m_Right: 30
-    m_Top: 30
-    m_Bottom: 10
-  m_ChildAlignment: 0
-  spacing: {x: 0, y: 5}
-  direction: 0
 --- !u!1 &2110235754
 GameObject:
   m_ObjectHideFlags: 0
@@ -11299,230 +11744,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277b392d662405d428585b8c7db56fd6, type: 3}
---- !u!1001 &4694433902479006082
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 608603338}
-    m_Modifications:
-    - target: {fileID: 1213546333975221989, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_fontSize
-      value: 63.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1213546333975221989, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_enableAutoSizing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1430144731655532737, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070532036003081010, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380270095255422003, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4705877396412951374, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4837441192713862289, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_Name
-      value: Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 5115806476648062905, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6383256193678344311, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: growth.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 613.3333
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 465
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 316.66666
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -242.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7426502312488069672, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5115806476648062905, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2109975770}
-  m_SourcePrefab: {fileID: 100100000, guid: 8f6ecdb7774a6934f95ffeab7c946181, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

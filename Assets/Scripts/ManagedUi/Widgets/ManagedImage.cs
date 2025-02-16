@@ -12,7 +12,8 @@ namespace ManagedUi.Widgets
     [ExecuteInEditMode]
     public class ManagedImage : Image, IGridElement
     {
-        [Header("Style")] public bool onHoverEffect = true;
+        [Header("Style")]
+        public bool onHoverEffect = true;
         public bool fixColor = false;
         public UiSettings.ColorName colorTheme;
         public Color imageColor;

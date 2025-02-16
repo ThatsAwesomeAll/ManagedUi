@@ -32,3 +32,5 @@ MonoBehaviour:
     ColorDarker: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorBackground: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorBackgroundDarker: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+  _defaultImage: {fileID: 795163523, guid: 977113d79dbbbd54e93eb99ec9447f05, type: 3}
+  _defaultSelectionImage: {fileID: 21300000, guid: b41c09bf4d7288f4ca5b0da11f32dc41, type: 3}

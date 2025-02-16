@@ -13,6 +13,7 @@ public class SelectionAnimation : MonoBehaviour, IGridElement
 {
     public List<Image> images = new List<Image>();
     public bool enableNeeded = true;
+    public Sprite selectionSprite;
 
     private Image _selectionMarker;
     private Dictionary<Image,Color> defaultColors = new Dictionary<Image,Color>();
@@ -40,6 +41,7 @@ public class SelectionAnimation : MonoBehaviour, IGridElement
     }
     private void SetUpSelectionMarker()
     {
+        _selectionMarker.sprite = selectionSprite;
         _selectionMarker.rectTransform.anchorMax = Vector2.one;
         _selectionMarker.rectTransform.anchorMin = Vector2.zero;
     }

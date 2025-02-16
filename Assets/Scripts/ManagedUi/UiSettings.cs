@@ -85,8 +85,11 @@ public class UiSettings : ScriptableObject
     public Color SelectedColor => ImageColors.ColorAccent;
     public Color ConfirmedColor => ImageColors.ColorAccentLighter;
 
-    public ColorTheme ImageColors = new ColorTheme(ColorMode.Default);
-    public ColorTheme TextColors = new ColorTheme(ColorMode.DefaultText);
+    [SerializeField] ColorTheme ImageColors = new ColorTheme(ColorMode.Default);
+    [SerializeField] ColorTheme TextColors = new ColorTheme(ColorMode.DefaultText);
+    
+    [SerializeField] Sprite _defaultImage;
+    [SerializeField] Sprite _defaultSelectionImage;
 
     public Color GetImageColorByEnum(ColorName colorTheme, ColorTheme colorPalette)
     {
@@ -104,12 +107,12 @@ public class UiSettings : ScriptableObject
             _ => Color.black
         };
     }
-    
+
     public Color GetImageColorByEnum(ColorName colorTheme)
     {
         return GetImageColorByEnum(colorTheme, ImageColors);
     }
-    
+
     public enum TextStyle
     {
         Header,
@@ -144,5 +147,8 @@ public class UiSettings : ScriptableObject
         text.fontSizeMax = textSize.y;
         text.alignment = TextAlignmentOptions.Center;
     }
+
+    public Sprite DefaultImage() => _defaultImage;
+    public Sprite DefaultSelectionImage() => _defaultSelectionImage;
 }
 }
