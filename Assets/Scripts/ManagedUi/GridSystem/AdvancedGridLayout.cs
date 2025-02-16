@@ -51,7 +51,11 @@ public class AdvancedGridLayout : LayoutGroup
         int counter = 0;
         foreach (var childs in rectChildren)
         {
-
+            var layoutGrowable = childs.GetComponent<IGridElement>();
+            if (layoutGrowable != null && layoutGrowable.IgnoreLayout())
+            {
+                continue;
+            }
             int rowCount = counter/columns;
             int columnCount = counter%columns;
 
@@ -70,7 +74,6 @@ public class AdvancedGridLayout : LayoutGroup
 
     private void ComputeGridDimensions(int validChilds)
     {
-
         switch (priority)
         {
             case LayoutFocus.RowsFocused:
@@ -93,6 +96,8 @@ public class AdvancedGridLayout : LayoutGroup
                 rows = columns = Mathf.CeilToInt(Mathf.Sqrt(validChilds));
                 fitX = fitY = true;
                 break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
     }
 
