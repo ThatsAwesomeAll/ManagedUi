@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using ManagedUi.GridSystem;
+using System.Collections.Generic;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +9,7 @@ namespace ManagedUi.Selectables
 
 [ExecuteInEditMode]
 [RequireComponent(typeof(Image))]
-public class SelectionAnimation : MonoBehaviour
+public class SelectionAnimation : MonoBehaviour, IGridElement
 {
     public List<Image> images = new List<Image>();
     public bool enableNeeded = true;
@@ -51,5 +53,8 @@ public class SelectionAnimation : MonoBehaviour
             }
         }
     }
+    public int VerticalLayoutGrowth() => 1;
+    public int HorizontalLayoutGrowth() => 1;
+    public bool IgnoreLayout() => true;
 }
 }

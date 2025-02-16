@@ -59,8 +59,10 @@ namespace ManagedUi.Widgets
         {
             color = colorTypeColorValue;
         }
-        public int VerticalLayoutGrowth() => growth.x;
-        public int HorizontalLayoutGrowth() => growth.y;
+        
+        public int VerticalLayoutGrowth() => growth.y > 0 ? growth.y : 1;
+        public int HorizontalLayoutGrowth() => growth.x > 0 ? growth.x : 1;
+        public bool IgnoreLayout() => false;
     }
 
 #if UNITY_EDITOR
