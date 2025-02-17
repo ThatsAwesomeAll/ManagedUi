@@ -1,0 +1,3 @@
+[submodule "Assets\\Dependencies\\ManagedUiCore"]
+	path = Assets\\Dependencies\\ManagedUiCore
+	url = git@github.com:ThatsAwesomeAll/ManagedUiCore.git
