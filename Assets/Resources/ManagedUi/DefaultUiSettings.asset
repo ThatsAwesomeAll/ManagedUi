@@ -32,20 +32,20 @@ MonoBehaviour:
     ColorDarker: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorBackground: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorBackgroundDarker: {r: 0.8, g: 0.8, b: 0.8, a: 1}
-  _defaultImage: {fileID: 0}
-  _defaultSelectionImage: {fileID: 0}
+  _defaultImage: {fileID: -560774197, guid: 2175ef27b59359643b19d0bf96638945, type: 3}
+  _defaultSelectionImage: {fileID: -932718445, guid: 4f8696345a4773c4f8f03ce67c938bfc, type: 3}
   _defaultSelectionImageSliceFactor: 0.3
-  _defaultBackgroundImage: {fileID: 0}
-  _defaultBackgroundImageSliceFactor: 0.3
+  _defaultBackgroundImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  _defaultBackgroundImageSliceFactor: 0.05
   DefaultFontStyleSettings:
     HeaderStyle:
-      textMinMax: {x: 0, y: 0}
+      textMinMax: {x: 30, y: 100}
     HighlightStyle:
-      textMinMax: {x: 0, y: 0}
+      textMinMax: {x: 30, y: 80}
     TextStyle:
-      textMinMax: {x: 0, y: 0}
+      textMinMax: {x: 20, y: 40}
     SubTextStyle:
-      textMinMax: {x: 0, y: 0}
+      textMinMax: {x: 10, y: 30}
   defaultSelectionDuration: 0.3
   defaultConfirmedDuration: 0.1
   defaultSelectionStrength: 5
