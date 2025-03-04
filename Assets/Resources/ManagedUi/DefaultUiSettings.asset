@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: DefaultUiSettings
   m_EditorClassIdentifier: 
   ImageColors:
-    ColorAccent: {r: 1, g: 0.71, b: 0.01, a: 1}
-    ColorAccentLighter: {r: 1, g: 0.91, b: 0.01, a: 1}
-    ColorMain: {r: 0.98, g: 0.51, b: 0, a: 1}
-    ColorLight: {r: 0.15, g: 0.32, b: 0.48, a: 1}
-    ColorLighter: {r: 0.2, g: 0.4, b: 0.6, a: 1}
-    ColorDark: {r: 0.01, g: 0.19, b: 0.27, a: 1}
-    ColorDarker: {r: 0.011, g: 0.1, b: 0.25, a: 1}
-    ColorBackground: {r: 0.2, g: 0.3, b: 0.3, a: 1}
-    ColorBackgroundDarker: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    ColorAccent: {r: 0.6117647, g: 0.80392164, b: 0.86274517, a: 1}
+    ColorAccentLighter: {r: 0.73419607, g: 0.83261645, b: 0.8627451, a: 1}
+    ColorLight: {r: 0.33333334, g: 0.5686275, b: 0.6627451, a: 1}
+    ColorLighter: {r: 0.5215804, g: 0.6224124, b: 0.6627451, a: 1}
+    ColorDark: {r: 0.019607844, g: 0.27058825, b: 0.41176474, a: 1}
+    ColorDarker: {r: 0.017377364, g: 0.20273583, b: 0.307, a: 1}
+    ColorBackground: {r: 0.023529414, g: 0.17254902, b: 0.2627451, a: 1}
+    ColorBackgroundDarker: {r: 0.014597012, g: 0.107044764, b: 0.16299999, a: 1}
   TextColors:
     ColorAccent: {r: 0.1, g: 0.1, b: 0.1, a: 1}
     ColorAccentLighter: {r: 0.1, g: 0.1, b: 0.1, a: 1}
-    ColorMain: {r: 0.1, g: 0.1, b: 0.1, a: 1}
     ColorLight: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorLighter: {r: 0.8, g: 0.8, b: 0.8, a: 1}
     ColorDark: {r: 0.8, g: 0.8, b: 0.8, a: 1}
@@ -36,16 +34,20 @@ MonoBehaviour:
   _defaultSelectionImage: {fileID: -932718445, guid: 4f8696345a4773c4f8f03ce67c938bfc, type: 3}
   _defaultSelectionImageSliceFactor: 0.3
   _defaultBackgroundImage: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  _defaultBackgroundImageSliceFactor: 0.05
+  _defaultBackgroundImageSliceFactor: 0.3
   DefaultFontStyleSettings:
     HeaderStyle:
-      textMinMax: {x: 30, y: 100}
+      textMinMax: {x: 20, y: 100}
+      font: {fileID: 11400000, guid: a705cfbbd0b4b814197f422d3fc067b5, type: 2}
     HighlightStyle:
       textMinMax: {x: 30, y: 80}
+      font: {fileID: 11400000, guid: a705cfbbd0b4b814197f422d3fc067b5, type: 2}
     TextStyle:
       textMinMax: {x: 20, y: 40}
+      font: {fileID: 11400000, guid: b4165d23100d4be418f22434df38d073, type: 2}
     SubTextStyle:
       textMinMax: {x: 10, y: 30}
+      font: {fileID: 11400000, guid: b4165d23100d4be418f22434df38d073, type: 2}
   defaultSelectionDuration: 0.3
   defaultConfirmedDuration: 0.1
   defaultSelectionStrength: 5
